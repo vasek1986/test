@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог.ком</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/feature-carousel.css"/>
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css" />
+	<script src="js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header" class="width">
+			<a href="#"><i class="fa fa-home"></i></a>
+			<a href="#"><i class="fa fa-envelope-o"></i></a>
+			<a href="#"><i class="fa fa-sitemap"></i></a>
+			<a href="#" id="logo"><img src="images/logo.png" alt="shoplogo" /></a>
+			<div id="contact"><p>e-mail: mail@company.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel.: (044) 444-44-44, (044) 444-44-44</p></div>
+			<div id="serch">
+			<form action="">
+				<i class="fa fa-search"></i>
+				<input type="text" value="Поиск"/>
+				<input type="submit" class="button" value="Искать"/>
+			</form>
+		</div>
+			<h3>Слоган Вашей компании</h3>
+			
+			<div id="login">
+				<a href="#">Вход</a> |
+				<a href="#">Регистрация</a>
+			</div>
+		</div>
+		<div id="nav" class="width">
+			<ul id="menu-top">
+				<li><a href="#">Главная</a></li>
+				<li id="katalog"><a href="#">Каталог</a>
+				<ul>
+					<li><a href="#">Категория1</a></li>
+					<li><a href="#">Категория2</a></li>
+					<li><a href="#">Категория3</a></li>
+					<li><a href="#">Категория4</a></li>
+					<li><a href="#">Категория5</a></li>
+					<li><a href="#">Категория6</a></li>
+					<li><a href="#">Категория7</a></li>
+					<li><a href="#">Категория8</a></li>
+					<li><a href="#">Категория9</a></li>
+					<li><a href="#">Категория10</a></li>
+					<li><a href="#">Категория11</a></li>
+					<li><a href="#">Категория12</a></li>
+					<li><a href="#">Категория13</a></li>
+				</ul>
+				</li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		<div id="basket">
+			<form action="">
+				<input type="text" id="amount" value="Товаров в корзине: 0" disabled/>
+				<input type="text" id="sum" value="На сумму: 0" disabled/>
+				<input type="submit" class="button" value="Оформить заказ"/>
+			</form>
+		</div>
+		</div>
+		<div id="slider">
+			<div class="width">
+				<div class="carousel-container">
+				
+				  <div id="carousel">
+					<div class="carousel-feature">
+					  <a href="#"><img class="carousel-image" alt="Image Caption" src="images/tovary/tovar1_1.png"></a>
+					</div>
+					<div class="carousel-feature">
+					  <a href="#"><img class="carousel-image" alt="Image Caption" src="images/tovary/tovar2_1.png"></a>
+					</div>
+					<div class="carousel-feature">
+					  <a href="#"><img class="carousel-image" alt="Image Caption" src="images/tovary/tovar3_1.png"></a>
+					</div>
+					<div class="carousel-feature">
+					  <a href="#"><img class="carousel-image" alt="Image Caption" src="images/tovary/tovar4_1.png"></a>
+					</div>
+					<div class="carousel-feature">
+					  <a href="#"><img class="carousel-image" alt="Image Caption" src="images/tovary/tovar5_1.png"></a>
+					</div>
+				  </div>
+				
+				  <div id="carousel-left"><img src="images/left.png" alt="вперёд"/></div>
+				  <div id="carousel-right"><img src="images/right.png" alt="назад"/></div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper-content">
+			<div class="width">
+				<div id="left-bar">
+					<div id="catigory">	
+						<h4>Категории товаров</h4>
+						<ul>
+							<li><a href="#">Категория1</a></li>
+							<li><a href="#">Категория2</a></li>
+							<li><a href="#">Категория3</a></li>
+							<li><a href="#">Категория4</a></li>
+							<li><a href="#">Категория5</a></li>
+							<li><a href="#">Категория6</a></li>
+							<li><a href="#">Категория7</a></li>
+							<li><a href="#">Категория8</a></li>
+							<li><a href="#">Категория9</a></li>
+							<li><a href="#">Категория10</a></li>
+							<li><a href="#">Категория11</a></li>
+							<li><a href="#">Категория12</a></li>
+							<li><a href="#">Категория13</a></li>
+						</ul>
+					</div>
+					<div id="news">
+						<h4>Новости</h4>
+						<span>10.08.2012</span>
+						<b>Новость о компании</b>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing dolor sit amet elit. Aenean commodo ligula eget dolor. Aenean dolor sit amet massa.</p>
+						<a href="#">все новости</a>
+					</div>
+					<div id="social">
+					<ul>
+						<li><a href="#"><img src="images/facebook.png" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/google.png" alt="google+" /></a></li>
+						<li><a href="#"><img src="images/youtube.png" alt="youtube" /></a></li>
+						<li><a href="#"><img src="images/tvit.png" alt="tviter" /></a></li>
+					</ul>
+					</div>
+				</div>
+				<div id="content">
+					<div id="tovary">
+						<div><h4>Товары</h4></div>
+						<div id="tovar1" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара Название товара Название товара Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar2" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar3" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar4" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar5" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar6" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar7" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+						<div id="tovar8" class="tovar">
+							<div></div>
+							<span><a href="#">Название товара</a></span>
+							<form action="">
+								<label>120 500 грн</label>
+								<input type="submit" class="button" value="в корзину" />
+							</form>
+						</div>
+					</div>
+					<div id="article">
+						<div><h4>Добро пожаловать на сайт компании</h4></div>
+						<p><span><strong>Our company</strong></span> -  lacinia sit amet vehicula eget, pretium vel justo. Curabitur consequat, augue a feugiat lacinia, nibh enim elementum eros, et sodales turpis augue in urna. Sed dictum magna at ante volutpat non dapibus metus volutpat. Suspendisse potenti. Morbi non lacus eget lectus cursus tincidunt vel ut erat. Nunc luctus, ipsum ut hendrerit posuere, massa orci facilisis lorem, et imperdiet elit eros in ante. Nullam accumsan <span>posuere magna</span>, sit amet bibendum elit egestas eget. Proin ut placerat nulla. Suspendisse mattis, lorem ac tempor pharetra, <span><a href="#">eros mauris</a></span> interdum enim, at aliquam tellus libero vel sapien. Aenean quis leo mi. Mauris eu arcu enim, vel interdum odio. In tincidunt tempor elit, in consequat diam accumsan et. Ut quis leo quam, eu tristique tortor.</p>
+						<p>Sed dictum magna at ante volutpat non dapibus metus volutpat. Suspendisse potenti. Morbi non lacus eget lectus cursus tincidunt vel ut erat. Nunc luctus, ipsum ut hendrerit posuere, massa orci facilisis lorem, et imperdiet elit eros in ante. Nullam accumsan posuere magna, sit amet bibendum elit egestas eget. Proin ut placerat nulla.Proin ut placerat nulla. Suspendisse mattis, lorem ac tempor pharetra, eros mauris interdum enim, at aliquam tellus libero vel sapien.</p>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="all-width">
+				<div id="bottom-nav" class="width">
+					<ul>
+						<li><a href="#">Главная</a>|</li>
+						<li><a href="#">Каталог</a>|</li>
+						<li><a href="#">О компании</a>|</li>
+						<li><a href="#">Доставка и оплата</a>|</li>
+						<li><a href="#">Новости</a>|</li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="copy">
+				<div class="width">
+				<p>&copy; Copyright 2012 Сайт-визитка Вашей компании</p>
+				<ul>
+					<li>Продукт</li>
+					<li><a href="#">Soft Industry</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>	
+		
+		
+			
+	</div>
+</body>
+</html>

@@ -1,0 +1,436 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial;
+}
+body{
+	font-size:14px;
+}
+.width{
+	width:1000px;
+	margin:0 auto;
+}
+img{
+	border:none;
+}
+#header{
+	height:100px;
+	position:relative;
+}
+.fa{
+	position:absolute;
+	color:#0F7E9D;
+}
+#logo{
+	float:left;
+	position:relative;
+	top:40px;
+}
+#header #contact{
+	float:left;
+	margin:10px 0px 20px 25px;
+	color: #0F7E9D;
+	font-size:0.9em;
+}
+.button{
+	background:#E1E1E1;
+	background:linear-gradient(to top, #AEAEAE 0%, #F3F3F3 70%);
+	border:1px solid #C5C5C5;
+	border-radius:4px;
+	padding:2px 5px;
+	color:#686868;
+	font-size:0.85em;
+}
+#serch{
+	position:relative;
+	float:left;
+	margin:5px 0px 20px 120px;
+}
+.fa-search{
+	top:3px;
+	left:2px;
+	color:#989898;
+}
+.fa-home{
+	top:10px;
+	left:5px;
+}
+.fa-envelope-o{
+	top:10px;
+	left:45px;
+}
+.fa-sitemap{
+	top:10px;
+	left:85px;
+}
+
+#serch input[type="text"]{
+	font-family:arial;
+	color:#C5C5C5;
+	border:1px solid #C5C5C5;
+	height:20px;
+	padding-left:20px;
+}
+#serch input[type="submit"]:hover{
+	background:#DEDEDE;
+	cursor:pointer;
+	background:linear-gradient(to top, #AEAEAE 0%, #F3F3F3 40%);
+}
+#header h3{
+	margin-left: 250px;
+	color:#686868;
+}
+#header #login{
+	float:right;
+}
+#header a{
+	color:#FF7E00;
+	font-size:0.9em;
+}
+#nav{
+	height:25px;
+}
+#menu-top ul,#menu-top{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	font-family:arial;
+	font-size:1em;
+}
+#menu-top>li{
+	float:left;
+	height:25px;
+	border:0px solid #FF7E00;
+	border-radius:4px 4px 0 0;
+	border-bottom:none;
+	margin-right:5px;
+	padding:5px 7px 0px;
+	background-color:#FF7E00;
+	color: white;
+	font-size: 1em;
+	position: relative;
+}
+#menu-top>li#katalog>a{
+	background:#FF7E00 url(../images/mark2.png) 100% 7px no-repeat;
+	padding-right:15px;
+}
+#menu-top>li>ul{
+	position:absolute;
+	top:25px;
+	background-color:#FF7E00;
+	border:0px solid #FF7E00;
+	border-radius:0 0 4px 4px;
+	margin-left:-10px;
+	padding:10px 10px;
+	display:none;
+}
+#menu-top a{text-decoration:none;}
+#menu-top>li>ul li a:hover{color:#686868;}
+#menu-top>li:hover{padding-top:7px;}
+#menu-top a{color:white;}
+#menu-top>li>ul a{line-height:25px;}
+#menu-top>li:hover>ul{display:block;}
+#basket{
+	text-align:right;
+	background:#FFF url(../images/basket1.png) 0 0 no-repeat;
+	float:right;
+	position:relative;
+	bottom:10px;
+	padding:5px 0px 5px 35px;
+}
+#basket input[type="text"]#amount{
+	font-family:arial;
+	margin-right:15px;
+	width:130px;
+	border:none;
+	background:transparent;
+}
+#basket input[type="text"]#sum{
+	font-family:arial;
+	width:100px;
+	border:none;
+	background:transparent;
+}
+#basket input[type="submit"]:hover{
+	background:#DEDEDE;
+	cursor:pointer;
+	background:linear-gradient(to top, #AEAEAE 0%, #F3F3F3 40%);
+}
+#slider{
+	height:250px;
+	border-top:8px solid #FF7E00;
+	background:#218FB5;
+	background:linear-gradient(to bottom, #218FB5, #53BAD7);
+}
+#slider .tovar{
+	width:184px;
+	background:#FFF;
+	border:2px solid #C5C5C5;
+}
+#slider .tovar div{
+	border:none;
+}
+
+
+#wrapper-content{
+	background-color:#EFEFEF;
+	background:linear-gradient(to bottom, #AEAEAE 0%, #F3F3F3 5%);
+}
+#left-bar{
+	float:left;
+	margin:20px 10px 20px 0px;
+	width:180px;
+	
+}
+#left-bar #catigory{
+	background-color:#FFF;
+	border:1px solid #DDDDDD;
+}
+#left-bar h4{
+	font-family:arial;
+	font-size:0.9em;
+	color:#3C9BB5;
+	background:#DDDDDD;
+	background:linear-gradient(to top, #AEAEAE 0%, #F3F3F3 50%);
+	padding:10px;
+	margin-bottom:10px;
+}
+#left-bar #catigory ul{
+	list-style-type: none;
+	font-family:arial;
+	font-size:0.95em;
+}
+#left-bar #catigory ul a{
+	text-decoration:none;
+	color:black;
+}
+#left-bar #catigory ul a:hover{color:#3C9BB5;}
+#left-bar #catigory ul li{
+	border-bottom:1px dashed #CFD4DD;
+	margin:10px 10px;
+	padding-bottom:8px;
+	padding-left: 15px;
+	background: #FFF url("../images/mark.png") 0 4px no-repeat;
+}
+#left-bar #news{
+	margin: 10px 0px;
+	border:1px solid #DDDDDD;
+	background-color:#FFF;
+}
+#left-bar #news span{
+	border:0px solid #000;
+	border-radius:4px;
+	background:#218FB5;
+	background:linear-gradient(to bottom, #218FB5, #53BAD7);
+	color:white;
+	font-size:0.8em;
+	padding:3px;
+	margin:10px;
+}
+#left-bar #news b{
+	display:block;
+	color:#FF7E00;
+	margin:10px 10px;
+}
+#left-bar #news p{
+	font-family:Arial;
+	font-size:0.8em;
+	line-height:1.3;
+	border-bottom:1px dashed #CFD4DD;
+	padding-bottom:10px;
+	margin:5px 10px 20px;
+}
+#left-bar #news a{
+	font-family:Arial;
+	font-size:0.8em;
+	color:#0F7E9D;
+	position:relative;
+	left:40%;
+	bottom:15px;
+	background:url(../images/more.png) 100% 60% no-repeat;
+	padding-right:15px;
+}
+#left-bar #social ul{
+	list-style-type: none;
+}
+#left-bar #social li{
+	float:left;
+	margin:0px 5px;
+}
+#left-bar #social li img{
+	border:none;
+}
+
+#content{
+	border: 1px solid transparent;
+}
+#content #tovary{
+	margin-top:20px;
+	margin-left: 190px;
+}
+#content #tovary h4{
+	font-family:arial;
+	font-size:0.9em;
+	color:#3C9BB5;
+	border-bottom:1px solid #C5C5C5;
+	padding-bottom:10px;
+}
+/* #content #tovary  */.tovar{
+	height:200px;
+	width:180px;
+	float: left;
+	margin:20px 15px 5px 0px;
+	position:relative;
+	
+}
+/* #content #tovary  */.tovar div{
+	border:2px solid #C5C5C5;
+	height:144px;
+	width:180px;
+}
+
+/* #content #tovary */ .tovar#tovar1 div{
+	background:#FFF url(../images/tovary/tovar1.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar#tovar2 div{
+	background:#FFF url(../images/tovary/tovar2.png) 0 0 no-repeat;
+}
+/* #content #tovary  */.tovar#tovar3 div{
+	background:#FFF url(../images/tovary/tovar3.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar#tovar4 div{
+	background:#FFF url(../images/tovary/tovar4.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar#tovar5 div{
+	background:#FFF url(../images/tovary/tovar5.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar#tovar6 div{
+	background:#FFF url(../images/tovary/tovar6.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar#tovar7 div{
+	background:#FFF url(../images/tovary/tovar7.png) 0 0 no-repeat;
+}
+/* content #tovary */ .tovar#tovar8 div{
+	background:red url(../images/tovary/tovar8.png) 0 0 no-repeat;
+}
+/* #content #tovary */ .tovar span{
+	font-family:arial;
+	font-size:0.9em;
+	color:#686868;
+	display:block;
+	height:15px;
+	width:180px;
+	overflow:hidden;
+	margin:5px 0px 5px 0px;
+}
+.tovar span a{
+	text-decoration:none;
+	font-family:arial;
+	color:#686868;
+}
+.tovar form{
+	margin-top:5px;
+}
+.tovar span:hover{
+	position:absolute;
+	height:60px;
+	background:#39A3C5;
+	background:rgba(57,163,197,0.9);
+	background:linear-gradient(to top, rgba(33,143,181,0.9), rgba(83,186,215,0.9));
+	border:1px solid rgba(57,163,197,0.9);
+	border-radius:5px;
+	padding:2px;
+}
+.tovar span:hover a{
+	color:white;
+}
+/* #content #tovary */ .tovar form label{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:0.9em;
+	color:#FF7E00;
+	width:98px;
+	float:left;
+	margin-top:3px;
+}
+/* #content #tovary */ .tovar input{
+	background:url(../images/basket.png) 2px 2px no-repeat, linear-gradient(to top, #AEAEAE 0%, #F3F3F3 70%);
+	width:80px;
+	font-size:0.85em;
+	padding:2px 0px 2px 20px;
+	float:right;
+}
+/* #content #tovary */ .tovar input:hover{
+	background:#DEDEDE;
+	cursor:pointer;
+	background:url(../images/basket.png) 2px 2px no-repeat, linear-gradient(to top, #AEAEAE 0%, #F3F3F3 40%);
+}
+#article{
+	margin:470px 0px 0px 190px;;
+	height:280px;
+}
+#content #article h4{
+	font-family:arial;
+	font-size:0.9em;
+	color:#3C9BB5;
+	border-bottom:1px solid #C5C5C5;
+	padding-bottom:10px;
+}
+#article p{
+	font-family:arial;
+	font-size:0.95em;
+	color:#3F3F3F;
+	margin-top:20px;
+}
+#article p span,#article p a{
+	color:#FF7E00;
+}
+#footer div.all-width{
+	background:#218FB5;
+	background:linear-gradient(to bottom, #218FB5, #53BAD7);
+	clear:both;
+}
+#footer #bottom-nav{
+	height:35px;
+	padding-top:10px;
+}
+#footer #bottom-nav ul{
+	list-style-type: none;
+	margin-left:-20px;
+}
+#footer #bottom-nav li{
+	float:left;
+	color: white;
+	
+}
+#footer #bottom-nav li a{
+		margin-right:20px;
+		margin-left:20px;
+		color: white;
+}
+#footer #bottom-nav li a{text-decoration:none;}
+#footer #bottom-nav li a:hover{
+		color:#686868;
+		
+}
+
+#footer #copy{
+	background-color:#DCDCDC;
+}
+#footer #copy div{
+	height:90px;
+	background:#DCDCDC url(../images/Soft Industry.png) 90% 10px no-repeat;
+	padding-top:10px;
+}
+#footer #copy div p{
+	float: left;
+}
+#footer #copy div ul{
+	color:#333333;
+	list-style-type:none;
+	float:right;
+}
+
+#footer #copy div ul a{
+	color:#0F7E9D;
+}
